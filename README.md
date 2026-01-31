@@ -16,7 +16,12 @@ I thought this was perfect for small shops, roleplay stores, or as a lightweight
 
 [ox_lib](https://github.com/overextended/ox_lib) ox_lib
 
-This is also available on my [Tebex](https://core-forge.tebex.io/package/7254081/)
+
+--
+[![Core-Billing Demo](https://img.youtube.com/vi/NcxGqFz_byI/0.jpg)](https://www.youtube.com/watch?v=NcxGqFz_byI)
+
+This is also available on my Tebex:
+[https://core-forge.tebex.io/](https://core-forge.tebex.io/package/7254081/)
 
 Github profile:
 [Github Profile](https://github.com/Core-Forge-5)
