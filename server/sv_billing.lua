@@ -123,6 +123,7 @@ RegisterNetEvent('CoreBilling:acceptBill', function(billerId, amount, upcharge, 
     local cash = customer.PlayerData.money.cash
     local bank = customer.PlayerData.money.bank
     local citizenid = customer.PlayerData.citizenid
+    local employeecid = biller.PlayerData.citizenid
     local billerName = biller.PlayerData.charinfo.firstname .. ' ' .. biller.PlayerData.charinfo.lastname
     local amountToSociety = bill.base
     local profit = bill.profit
@@ -148,8 +149,9 @@ RegisterNetEvent('CoreBilling:acceptBill', function(billerId, amount, upcharge, 
     -- Log customer transaction
     exports['Renewed-Banking']:handleTransaction(
         citizenid,                                  -- account (customer)
-        ('%s Purchase'):format(bill.shopName),     -- title
+        ('%s Purchase'):format(bill.shopName),      -- title
         total,                                      -- amount
+        ('Successful Purchase'),                    -- message 
         billerName,                                 -- issuer
         bill.shopName,                              -- receiver (society)
         'withdraw'                                  -- type
@@ -157,14 +159,15 @@ RegisterNetEvent('CoreBilling:acceptBill', function(billerId, amount, upcharge, 
 
     -- Log society receipt
     exports['Renewed-Banking']:handleTransaction(
-        bill.shopName,                              -- account (society)
-        ('Sale to %s'):format(customer.PlayerData.charinfo.firstname), -- title
-        amountToSociety,                            -- amount
-        billerName,                                 -- issuer (employee)
-        bill.shopName,                              -- receiver (society)
-        'deposit'                                   -- type
+        shopName,                                                      -- account (society)  
+        ('Sale to %s'):format(customer.PlayerData.charinfo.firstname), -- title 
+        amount,                                                        -- amount
+        ('Successful Sale'),                                           -- message 
+        billerName,                                                    -- issuer (employee) 
+        shopName,                                                      -- receiver (society) 
+        'deposit'                                                      -- type 
     )
-
+    
     -- Notify both players
     TriggerClientEvent('CoreBilling:clientNotify', src, 
         ('You paid $%s to %s.'):format(total, bill.shopName), 

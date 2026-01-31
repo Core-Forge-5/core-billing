@@ -5,10 +5,10 @@ Config.Framework = 'qbx' -- 'qbx' | 'qbcore' | 'esx' --Framework is unused but l
 Config.Shops = {
     ammunation = {
         label = "Ammunation",
-        location = vec3(1724.81, 3041.5, 59.17),
+        location = vec3(1693.4, 3755.65, 35.04),
         job = "ammunation",
         size = vec3(0.55, 0.55, 0.55),
-        debug = true,
+        debug = false,
     },
     -- ammunation2 = {  --Example
     --     label = "AmmuNation",
