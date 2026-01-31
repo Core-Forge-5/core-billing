@@ -17,3 +17,9 @@ I thought this was perfect for small shops, roleplay stores, or as a lightweight
 
 This is also available on my Tebex:  
 [https://core-forge.tebex.io/](https://core-forge.tebex.io/package/XXXXXXX)
+
+Github profile:
+[Github Profile](https://github.com/Core-Forge-5)
+
+Github repo:
+[Github](https://github.com/Core-Forge-5/core-billing)
