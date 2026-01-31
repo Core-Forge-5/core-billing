@@ -12,8 +12,9 @@ This is my second release and I made a simple POS billing system that:
 I thought this was perfect for small shops, roleplay stores, or as a lightweight alternative to more complex billing systems.  
 
 # Requires
-[Renewed-Banking](https://github.com/Renewed-Scripts/Renewed-Banking)
-[ox_lib](https://github.com/overextended/ox_lib)
+[Renewed-Banking](https://github.com/Renewed-Scripts/Renewed-Banking) Feature Rich banking system that includes society accounts.
+
+[ox_lib](https://github.com/overextended/ox_lib) ox_lib
 
 This is also available on my Tebex:  
 [Tebex](https://core-forge.tebex.io/)
