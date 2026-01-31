@@ -16,8 +16,7 @@ I thought this was perfect for small shops, roleplay stores, or as a lightweight
 
 [ox_lib](https://github.com/overextended/ox_lib) ox_lib
 
-This is also available on my Tebex:  
-[Tebex](https://core-forge.tebex.io/)
+This is also available on my [Tebex](https://core-forge.tebex.io/)
 
 Github profile:
 [Github Profile](https://github.com/Core-Forge-5)
