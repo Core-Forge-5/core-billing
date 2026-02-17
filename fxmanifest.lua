@@ -16,3 +16,10 @@ shared_scripts {
     '@qbx_core/modules/playerdata.lua',
     'config.lua'
 }
+
+escrow_ignore {
+    'client/',
+    'server/',
+    'bridge.lua',
+    'config.lua'
+}
