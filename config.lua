@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Framework = 'qbx' -- 'qbx' | 'qbcore' | 'esx' --Framework is unused but leave as is
+Config.Framework = 'qbx' -- 'qbx' | 'qbcore' | 'esx' 
 
 Config.Shops = {
     ammunation = {
