@@ -25,7 +25,7 @@ RegisterNetEvent('CoreBilling:cancelledPayment', function(billId)
 end)
 -- canOpenPOS, Checks if shopName is in the config, and if source has the jobName for that shop
 lib.callback.register('CoreBilling:canOpenPOS', function(source, shopName)
-    local player = exports.qbx_core:GetPlayer(source)
+    local player = Framework.GetPlayer(source)
     local shopData = Config.Shops[shopName]
 
     if not shopData then
@@ -47,8 +47,8 @@ end)
 --Send bill to customer
 RegisterNetEvent('CoreBilling:sendBill', function(targetId, sentBase, sentProfit, shopName)
     local src = source
-    local employee = exports.qbx_core:GetPlayer(src)
-    local target = exports.qbx_core:GetPlayer(targetId)
+    local employee = Framework.GetPlayer(src)
+    local target = Framework.GetPlayer(targetId)
     if not employee or not target then return end
 
     if HasPendingBillFrom(src) then
@@ -101,8 +101,8 @@ end)
 --Customer accepts bill
 RegisterNetEvent('CoreBilling:acceptBill', function(billerId, amount, upcharge, shopName, billId)
     local src = source
-    local customer = exports.qbx_core:GetPlayer(src)
-    local biller = exports.qbx_core:GetPlayer(billerId)
+    local customer = Framework.GetPlayer(src)
+    local biller = Framework.GetPlayer(billerId)
     if not customer or not biller then return end
 
     -- Retrieve the bill from server-side table
