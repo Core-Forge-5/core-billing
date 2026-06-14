@@ -13,6 +13,7 @@ Thumbs.db
 
 # Logs / misc
 *.log
+*.build
 *.bak
 # Source hidden in public repo
 *.lua
