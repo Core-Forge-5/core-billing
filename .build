@@ -1,0 +1,6 @@
+cd D:/Qbox-main
+cd resources
+cd '.\`[core`]\'
+cd core-billing
+./setup.ps1
+./sync.ps1
