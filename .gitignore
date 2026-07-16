@@ -17,5 +17,4 @@ Thumbs.db
 *.ps1
 *.bak
 # Source hidden in public repo
-*.lua
 *.ps1
